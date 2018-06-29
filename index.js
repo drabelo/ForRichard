@@ -13,7 +13,7 @@ app.get("/", (req, res) => res.send("Hello World!"));
 app.get("/url", (req, res) => {
   const options = {
     headers: {
-      Authorization: "Token 8691b66c9198e00b32eafafaf64f5be5f6e05840"
+      Authorization: process.env.token
     }
   };
 
